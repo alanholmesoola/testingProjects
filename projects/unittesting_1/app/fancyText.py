@@ -7,6 +7,9 @@ class FancyText:
         Applies mixed case of upper and lower to string
         '''
 
+        if type(text_to_be_formatted) != str:
+            raise TypeError("Needs to be a string")
+
         index = 0
         mystring = ""
     
