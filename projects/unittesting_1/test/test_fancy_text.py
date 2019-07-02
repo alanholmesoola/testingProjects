@@ -52,4 +52,4 @@ class TestFancyText(unittest.TestCase):
         expected_result = TypeError
 
         #Act/asset
-        self.assertRaises(expected_result, FancyText.mixed_case(123))
+        self.assertRaises(expected_result, fancy.mixed_case(test_data))
