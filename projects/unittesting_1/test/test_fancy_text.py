@@ -28,3 +28,15 @@ class TestFancyText(unittest.TestCase):
 
         #Assert
         self.assertEqual(observed,expected_result)
+
+    def test_special_characters(self):
+        #Arrange
+        fancy = FancyText()
+        test_data = "!@£$%^&*()"
+        expected_result = "!@£$%^&*()"
+
+        #Act
+        observed = fancy.mixed_case(test_data)
+
+        #Assert
+        self.assertEqual(observed,expected_result)
