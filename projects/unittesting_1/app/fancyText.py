@@ -1,5 +1,12 @@
 class FancyText:
     def mixed_case(self, text_to_be_formatted):
+
+        '''
+        DOCSTRING:
+        Takes a string as input
+        Applies mixed case of upper and lower to string
+        '''
+
         index = 0
         mystring = ""
     
