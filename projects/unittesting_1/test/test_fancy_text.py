@@ -4,6 +4,8 @@ import unittest
 
 class TestFancyText(unittest.TestCase):
 
+    #Positive Cases
+
     def test_upper_and_lower_case_a_uppercase_word(self):
         # Arrange
         fancy = FancyText()
@@ -40,3 +42,14 @@ class TestFancyText(unittest.TestCase):
 
         #Assert
         self.assertEqual(observed,expected_result)
+
+    
+#Negative Cases
+    def test_needs_to_raise_exception_when_not_string(self):
+        #Arrange
+        fancy = FancyText()
+        test_data = 12345
+        expected_result = TypeError
+
+        #Act/asset
+        self.assertRaises(expected_result, FancyText.mixed_case(123))
