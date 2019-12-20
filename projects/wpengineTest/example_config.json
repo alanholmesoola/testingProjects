@@ -1,0 +1,5 @@
+{
+    "user": "example_user",
+    "password": "example_password",
+    "driver_path": "./drivers/mac_chromedriver"
+}
